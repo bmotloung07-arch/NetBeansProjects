@@ -68,6 +68,7 @@ public class Login {
     }
 //Returns the appropriate message after a Login attempt
     public String  returnLoginStatus(boolean LoginStatus) {
+        //Returns the appropriate message based on the login results.
         if (LoginStatus){
             return "Welcome" + firstName + "" +LastName
                     +" it is lovely to see you again.";
