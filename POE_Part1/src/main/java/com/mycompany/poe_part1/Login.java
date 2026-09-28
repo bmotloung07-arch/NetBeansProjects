@@ -30,6 +30,7 @@ public class Login {
     }
     // checks whether the password meets all required complexity rules
     public boolean checkPasswordComplexity() {
+        //Checks whether the password contains atleast one uppercase letter.
         boolean hasUppercase = password.matches(".*[A-Z].*");
         boolean hasNumber = password.matches(".*[0-9].*");
         boolean hasSpecialCharacter = password.matches (".*[^a-zA-Z0-9].*");
