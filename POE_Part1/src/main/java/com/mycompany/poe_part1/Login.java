@@ -45,6 +45,7 @@ public class Login {
     //Regex approach based on Java's regular-expression Pattern API.
     //Source: Oracle, Java Pattern API documentation.
     public boolean checkCellPhoneNumber() {
+        //Regex checks that the numberstarts with +27 and contains required digits.
         String phoneRegex = "^\\+27[0-9]{9}$";
         return Pattern.matches(phoneRegex, cellPhoneNumber);
         
