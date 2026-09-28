@@ -13,7 +13,7 @@ public class POE_Part1 {
 
     public static void main(String[] args) {
 Scanner scanner = new Scanner(System.in);   
-  
+  //Registration section: collects the user's details.
 System.out.println("=== Registration===");
     
   System.out.print("Enter your first name: ");  
@@ -34,7 +34,7 @@ System.out.println("=== Registration===");
   Login user = new Login(firstName, LastName, username, password, cellPhoneNumber);
   
   System.out.println(user.registration());
-  
+  //login section: verifies the entered username and password.
   System.out.println("\n=== Login ===");
     
   System.out.print("Enter your username to login");
