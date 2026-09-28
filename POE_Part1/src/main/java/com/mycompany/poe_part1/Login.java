@@ -63,8 +63,8 @@ public class Login {
         }
     //verifies whether the login details match the registerd details
     public boolean LoginUser(String enteredUsername, String enteredPassword) {
-        return enteredUsername.equals(username)
-                && enteredPassword.equals(password);
+        return enteredUsername.equals(enteredUsername)
+                && enteredPassword.equals(enteredPassword);
     }
 //Returns the appropriate message after a Login attempt
     public String  returnLoginStatus(boolean LoginStatus) {
