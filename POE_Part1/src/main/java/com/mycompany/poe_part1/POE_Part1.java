@@ -45,6 +45,29 @@ System.out.println("=== Registration===");
   
   boolean loginStatus = user.LoginUser(enteredUsername, enteredPassword);
   System.out.println(user.returnLoginStatus(loginStatus));
+  if (loginStatus) {
+        System.out.println("Welcome to QuickChat");
+        System.out.println("1)Send Messages");
+        System.out.println("2)Show recently Sent Messages");
+        System.out.println("3)Quit");
+        System.out.println("Choose an option: ");
+        int choice = scanner.nextInt();
+        while (choice != 3) {
+            if(choice == 1) {
+                System.out.println("Send Messages selected.");
+            } else if (choice == 2) {
+                System.out.println("Coming Soon");
+            } else {
+                System.out.println("Invalid option.");
+            
+                  System.out.println("\n1) Send Messages"); 
+           System.out.println("2) Show recently sent messages");
+           System.out.println("3) Quit");
+           System.out.println("Choose an option: ");
+           choice = scanner.nextInt();
+            }
+        }
+    }
   scanner.close();
     }
 }

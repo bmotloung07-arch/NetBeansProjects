@@ -21,7 +21,7 @@ public class LoginTest {
     
    @Test
    public void testCheckUserNameInvalid(){
-       Login user = new Login("Bonolo", "Motloung", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
+       Login user = new Login("Bonolo", "Motloung", "kyl!!!!!!!", "Ch&&sec@ke99!", "+27838968976");
        
        assertFalse(user.checkUserName());
    }

@@ -77,8 +77,19 @@ public class Login {
         }
     }
 
-    Object registerUser() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    public String registerUser() {
+        if (!checkUserName()) {
+            return "Username is not correctly formatted, please ensure that your username contains an underscore and is no more than five characters in length";
+        }
+        if (!checkPasswordComplexity()) {
+            return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character";
+        }
+        if(!checkCellPhoneNumber()) {
+            return "Cell phone number is incorrectly formatted or does not contain an international code.";
+        }
+        return " Username successfully captured.";
+        }
     }
-}
+
             
