@@ -4,15 +4,6 @@
  */
 package com.mycompany.poe_part1;
 
-/**
- *
- * @author Student
- */
-public class MessageTest {
-    
-    
-}
-package com.mycompany.poe_part1;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,6 +12,12 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author Student
  */
+public class MessageTest {
+    
+    
+}
+
+
 public class MessageTest {
 
     @Test
